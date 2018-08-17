@@ -1,0 +1,38 @@
+﻿@model IEnumerable<net_core_EF_Redis_Cache.Models.Weather>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Weather</title>
+    
+    
+</head>
+<body>
+    <h1>Weather - Redis Cache information</h1>
+    <table>
+        <tr>
+            <td>ID</td>
+            <td>City</td>
+            <td>Degress</td>
+            <td>Is Raining</td>
+            <td>Wind Speed</td>
+        </tr>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.City</td>
+            <td>@item.Degress</td>
+            <td>@item.IsRaining</td>
+            <td>@item.WindSpeed</td>
+        </tr>
+        }
+    </table>
+</body>
+</html>
