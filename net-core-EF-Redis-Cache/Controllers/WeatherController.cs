@@ -9,7 +9,6 @@ using System.Collections.Generic;
 
 namespace net_core_EF_Redis_Cache.Controllers
 {
-   // [Route("api/[controller]")]
     public class WeatherController : Controller
     {
         private WeatherService _service;
